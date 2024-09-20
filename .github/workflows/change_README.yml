@@ -5,7 +5,7 @@ on:
     branches:
       - master
     paths:
-      - 'bucket/**'  # 当 'bucket' 文件夹内的文件有变化时触发
+      - 'bucket/**'
 
 jobs:
   update-readme:
@@ -13,17 +13,16 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3  # 使用最新版本的 checkout action
+      uses: actions/checkout@v3
 
     - name: Install jq
       run: |
-        sudo apt-get update  # 更新包列表
-        sudo apt-get install -y jq  # 安装 jq 工具
+        sudo apt-get update
+        sudo apt-get install -y jq
 
     - name: Update README
       run: |
-        # 使用 EOF 标记写入多行文本到 README.md
-        cat <<EOF > README.md
+        cat << 'EOF' > README.md
 <p align="center">
     <h1 align="center">Scoop Bucket</h1>
 </p>
@@ -67,43 +66,25 @@ Scoop bucket **就是一个软件仓库**,提供windows渗透测试环境工具�
 
    其中\`-RunAsAdmin\`是使用管理员角色执行脚本，\`-ScoopDir\`指定scoop安装目录，软件默认安装在此。 \`-ScoopGlobalDir\`指定全局程序安装到自定义目录。
 
-
-### 安装该软件仓库中的软件
-
-确保你已经有 Scoop 环境后，执行以下命令订阅本软件仓库：
-
-```powershell
-scoop bucket add 303 https://github.com//tongtong-bob/303
-```
-
-执行以下命令安装本仓库中的软件：
-
-```powershell
-scoop install 303/<软件名> -g
-```
-
 ## 现有适配软件
 | 软件                            | 描述                                                         | 官网地址                                                     |
 | :------------------------------ | :----------------------------------------------------------- | :----------------------------------------------------------- |
 EOF
 
-        # 遍历所有 JSON 文件，提取信息并更新 README.md
         find bucket -name '*.json' | while read file; do
-          name=$(basename "$file" .json)  # 提取文件名作为软件名称
-          description=$(jq -r '.description' "$file")  # 获取描述
-          homepage=$(jq -r '.homepage' "$file")  # 获取主页 URL
+          name=$(basename "$file" .json)
+          description=$(jq -r '.description' "$file")
+          homepage=$(jq -r '.homepage' "$file")
           echo "| scoop install $name -g | $description | <$homepage> |" >> README.md
         done
 
-        # 配置 git 用户信息
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        # 添加和提交 README.md 的更改
         git add README.md
         git commit -m "Update README with bucket JSON info" || echo "No changes to commit"
 
     - name: Push changes
       uses: ad-m/github-push-action@v0.6.0
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}  # 使用 GitHub Token 推送更改
-        branch: master  # 推送到 master 分支
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: master
