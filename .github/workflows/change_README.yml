@@ -69,7 +69,7 @@ jobs:
         echo "   \`\`\`" >> README.md
         echo "   执行以下命令安装本仓库中的软件：" >> README.md
         echo "   \`\`\`powershell" >> README.md
-        echo "   scoop install ar/<软件名> -g" >> README.md
+        echo "   scoop install 303/<软件名> -g" >> README.md
         echo "   \`\`\`" >> README.md
         echo "" >> README.md
         echo "## 现有适配软件" >> README.md
