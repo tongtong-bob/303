@@ -55,11 +55,11 @@ Scoop bucket **就是一个软件仓库**,提供windows渗透测试环境工具�
 | :------------------------------ | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | scoop install ToolsFx -g | 基于kotlin+tornadoFx的跨平台密码学工具箱.包含编解码,编码转换,加解密, 哈希,MAC,签名,大数运算,压缩,二维码功能,ctf等实用功能,支持插件 | <https://github.com/Leon406/ToolsFx> |
 | scoop install AlliN -g | A flexible scanner. | <https://github.com/P1-Team/AlliN> |
-| scoop install Advanced-SQL-Cheatsheet -g | A cheat sheet that contains advanced queries for SQL Injection of all types..(Scoop bucket by arch3rpro) | <https://github.com/kleiton0x00/Advanced-SQL-Injection-Cheatsheet> |
+| scoop install Advanced-SQL-Cheatsheet -g | A cheat sheet that contains advanced queries for SQL Injection of all types.. | <https://github.com/kleiton0x00/Advanced-SQL-Injection-Cheatsheet> |
 | scoop install yakit -g | 交互式应用安全测试平台 - Cyber Security ALL-IN-ONE Platform. | <https://www.yaklang.io> |
 | scoop install goby -g | 新一代网络安全技术，通过为目标建立完整的资产数据库，实现快速的安全应急 | <https://gobysec.net/> |
 | scoop install kscan -g | Kscan是一款纯go开发的全方位扫描器，具备端口扫描、协议检测、指纹识别，暴力破解等功能。支持协议1200+，协议指纹10000+，应用指纹2000+，暴力破解协议10余种。 | <https://github.com/lcvvvv/kscan> |
-| scoop install gogo -g | 面向红队的, 高度可控可拓展的自动化引擎(Scoop bucket for Cybersecurity by whoopscs) | <https://github.com/chainreactors/gogo> |
+| scoop install gogo -g | 面向红队的, 高度可控可拓展的自动化引擎 | <https://github.com/chainreactors/gogo> |
 | scoop install fscan -g | 一款内网综合扫描工具，方便一键自动化、全方位漏扫扫描。 | <https://github.com/shadow1ng/fscan> |
 | scoop install afrog -g | afrog 是一款性能卓越、快速稳定、PoC 可定制化的漏洞扫描工具 - A tool for finding vulnerabilities. | <https://github.com/zan8in/afrog> |
 | scoop install Pillager -g | Pillager是一个适用于后渗透期间的信息收集工具，可以收集目标机器上敏感信息，方便下一步渗透工作的进行。 | <https://github.com/qwqdanchun/Pillager> |
@@ -73,10 +73,10 @@ Scoop bucket **就是一个软件仓库**,提供windows渗透测试环境工具�
 | scoop install xxl-jobExploitGUI -g | xxl-job漏洞利用工具GUI | <https://github.com/charonlight/xxl-jobExploitGUI> |
 | scoop install JenkinsExploitGUI -g | Jenkins漏洞利用工具GUI | <https://github.com/charonlight/JenkinsExploitGUI> |
 | scoop install SpringExploitGUI -g | Spring漏洞利用工具GUI | <https://github.com/charonlight/SpringExploitGUI> |
-| scoop install nuclei -g | Fast and customizable vulnerability scanner based on simple YAML based DSL(Scoop bucket by arch3rpro) | <https://nuclei.projectdiscovery.io> |
+| scoop install nuclei -g | Fast and customizable vulnerability scanner based on simple YAML based DSL | <https://nuclei.projectdiscovery.io> |
 | scoop install struts2vulsscantools -g | 1、点击“检测漏洞”，会自动检测该URL是否存在S2-001、S2-005、S2-009、S2-013、S2-016、S2-019、S2-020/021、S2-032、S2-037、DevMode、S2-045/046、S2-052、S2-048、S2-053、S2-057、S2-061、S2相关log4j2十余种漏洞。  2、“批量验证”，（为防止批量geshell，此功能已经删除，并不再开发）。  3、S2-020、S2-021仅提供漏洞扫描功能，因漏洞利用exp很大几率造成网站访问异常，本程序暂不提供。  4、对于需要登录的页面，请勾选“设置全局Cookie值”，并填好相应的Cookie，程序每次发包都会带上Cookie。  5、作者对不同的struts2漏洞测试语句做了大量修改，执行 | <https://github.com/abc123info/Struts2VulsScanTools> |
 | scoop install HostCollisionGUI -g | HostCollision漏洞利用工具GUI | <https://github.com/charonlight/HostCollisionGUI> |
-| scoop install pocsuite3 -g | pocsuite3 is an open-sourced remote vulnerability testing framework developed by the Knownsec 404 Team.(Scoop bucket by arch3rpro) | <https://github.com/knownsec/pocsuite3/> |
+| scoop install pocsuite3 -g | pocsuite3 is an open-sourced remote vulnerability testing framework developed by the Knownsec 404 Team. | <https://github.com/knownsec/pocsuite3/> |
 | scoop install quark -g | 夸克网盘 | <https://pan.quark.cn/> |
 | scoop install everything-alpha -g | Locate files and folders by name instantly. | <https://www.voidtools.com> |
 | scoop install proxifier -g | Allows network applications that do not support working through proxy servers to operate through a SOCKS or HTTPS proxy and chains. | <https://www.proxifier.com> |
@@ -176,24 +176,24 @@ Scoop bucket **就是一个软件仓库**,提供windows渗透测试环境工具�
 | scoop install telegram -g | A messaging app with a focus on speed and security | <https://telegram.org> |
 | scoop install aliyun -g | Manage and use Alibaba Cloud resources. | <https://github.com/aliyun/aliyun-cli> |
 | scoop install fuzzDicts -g | Web Pentesting Fuzz 字典,一个就够了. | <https://github.com/TheKingOfDuck/fuzzDicts> |
-| scoop install oneforall -g | OneForAll是一款功能强大的子域收集工具(Scoop bucket for Cybersecurity by whoopscs) | <https://github.com/shmilylty/OneForAll> |
+| scoop install oneforall -g | OneForAll是一款功能强大的子域收集工具 | <https://github.com/shmilylty/OneForAll> |
 | scoop install subfinder -g | Subfinder is a subdomain discovery tool that discovers valid subdomains for websites. Designed as a passive framework to be useful for bug bounties and safe for penetration testing | <https://projectdiscovery.io> |
-| scoop install whatweb -g | whatweb 增强版 8000+插件（提供windows可执行文件）.(Scoop bucket by arch3rpro) | <https://github.com/winezer0/whatweb-plus> |
+| scoop install whatweb -g | whatweb 增强版 8000+插件（提供windows可执行文件）. | <https://github.com/winezer0/whatweb-plus> |
 | scoop install observerward -g | Cross platform community web fingerprint identification tool | <https://0x727.github.io/ObserverWard/> |
 | scoop install EHole_magic -g | EHole(棱洞)魔改。可对路径进行指纹识别；支持识别出来的重点资产进行漏洞检测(支持从hunter和fofa中提取资产)支持对ftp服务识别及爆破 | <https://github.com/lemonlove7/EHole_magic> |
-| scoop install ehole -g | EHole(棱洞)3.0 重构版-红队重点攻击系统指纹探测工具。(Scoop bucket for Cybersecurity by whoopscs) | <https://github.com/EdgeSecurityTeam/EHole> |
+| scoop install ehole -g | EHole(棱洞)3.0 重构版-红队重点攻击系统指纹探测工具。 | <https://github.com/EdgeSecurityTeam/EHole> |
 | scoop install ENScan_GO -g | 一款基于各大企业信息API的工具，解决在遇到的各种针对国内企业信息收集难题。一键收集控股公司ICP备案、APP、小程序、微信公众号等信息聚合导出。 | <https://github.com/wgpsec/ENScan_GO> |
 | scoop install ToolsFx -g | 基于kotlin+tornadoFx的跨平台密码学工具箱.包含编解码,编码转换,加解密, 哈希,MAC,签名,大数运算,压缩,二维码功能,ctf等实用功能,支持插件 | <https://github.com/Leon406/ToolsFx> |
 | scoop install AlliN -g | A flexible scanner. | <https://github.com/P1-Team/AlliN> |
-| scoop install txportmap -g | Port Scanner & Banner Identify From TianXiang(Scoop bucket by arch3rpro) | <https://github.com/4dogs-cn/TXPortMap> |
-| scoop install ServerScan -g | ServerScan一款使用Golang开发的高并发网络扫描、服务探测工具。(Scoop bucket by arch3rpro) | <https://github.com/Adminisme/ServerScan> |
+| scoop install txportmap -g | Port Scanner & Banner Identify From TianXiang | <https://github.com/4dogs-cn/TXPortMap> |
+| scoop install ServerScan -g | ServerScan一款使用Golang开发的高并发网络扫描、服务探测工具。 | <https://github.com/Adminisme/ServerScan> |
 | scoop install naabu -g | projectdiscovery/naabu: A fast port scanner written in go with a focus on reliability and simplicity. Designed to be used in combination with other tools for attack surface discovery in bug bounties and pentests | <https://github.com/projectdiscovery/naabu/> |
-| scoop install dirxk -g | 一款集成了多种老牌工具字典的轻量级目录扫描器，包括御剑后台扫描字典，test404网站备份，web破壳扫描器，御剑1.5扫描字典，御剑专业版字典，wwwscan字典，dirscan字典，dirsafe字典，swebscan.(Scoop bucket by arch3rpro) | <https://github.com/xk11z/dirxk> |
+| scoop install dirxk -g | 一款集成了多种老牌工具字典的轻量级目录扫描器，包括御剑后台扫描字典，test404网站备份，web破壳扫描器，御剑1.5扫描字典，御剑专业版字典，wwwscan字典，dirscan字典，dirsafe字典，swebscan. | <https://github.com/xk11z/dirxk> |
 | scoop install katana -g | A next-generation crawling and spidering framework. | <https://github.com/projectdiscovery/katana> |
-| scoop install feroxbuster -g | 一个用 Rust 编写的快速，简单，递归的内容发现工具。A fast, simple, recursive content discovery tool written in Rust.(Scoop bucket for Cybersecurity by whoopscs) | <https://github.com/epi052/feroxbuster> |
-| scoop install dirmap -g | An advanced web directory & file scanning tool that will be more powerful than DirBuster, Dirsearch, cansina, and Yu Jian.(Scoop bucket by arch3rpro) | <https://github.com/H4ckForJob/dirmap> |
+| scoop install feroxbuster -g | 一个用 Rust 编写的快速，简单，递归的内容发现工具。A fast, simple, recursive content discovery tool written in Rust. | <https://github.com/epi052/feroxbuster> |
+| scoop install dirmap -g | An advanced web directory & file scanning tool that will be more powerful than DirBuster, Dirsearch, cansina, and Yu Jian. | <https://github.com/H4ckForJob/dirmap> |
 | scoop install dirsearch_bypass403 -g | 信息收集中时可使用它进行目录枚举，目录进行指纹识别，枚举出来的403状态目录可尝试进行绕过。 | <https://github.com/lemonlove7/dirsearch_bypass403> |
 | scoop install gobuster -g | A tool to brute-force URIs, DNS subdomains or Virtual Host names | <https://github.com/OJ/gobuster> |
 | scoop install ffuf -g | Fast web fuzzer written in Go | <https://github.com/ffuf/ffuf> |
-| scoop install dirsearch -g | Web path scanner.(Scoop bucket for Cybersecurity by whoopscs) | <https://github.com/maurosoria/dirsearch> |
+| scoop install dirsearch -g | Web path scanner. | <https://github.com/maurosoria/dirsearch> |
 | scoop install urlfinder -g | 一款快速、全面、易用的页面信息提取工具，可快速发现和提取页面中的JS、URL和敏感信息。 | <https://github.com/pingc0y/URLFinder> |
