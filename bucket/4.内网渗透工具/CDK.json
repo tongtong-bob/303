@@ -1,0 +1,22 @@
+{
+    "version": "v1.5.2",
+    "description": "CDK是一款为容器环境定制的渗透测试工具，在已攻陷的容器内部提供零依赖的常用命令及PoC/EXP。集成Docker/K8s场景特有的 逃逸、横向移动、持久化利用方式，插件化管理。",
+    "homepage": "https://github.com/cdk-team/CDK",
+    "license": "test",
+    "url": [
+        "https://github.com/cdk-team/CDK/releases/download/v1.5.2/cdk_linux_amd64",
+        "https://github.com/cdk-team/CDK/releases/download/v1.5.2/cdk_linux_arm64"
+    ],
+    "hash": [
+    ],
+    "bin": [
+    ],
+    "checkver": "github",
+    "autoupdate": {
+                "url": [
+                        "https://github.com/cdk-team/CDK/releases/download/$version/cdk_linux_amd64",
+                        "https://github.com/cdk-team/CDK/releases/download/$version/cdk_linux_arm64"
+
+                    ]
+                }
+}

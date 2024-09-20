@@ -1,0 +1,28 @@
+{
+    "version": "0.0.18",
+    "description": "一款基于各大企业信息API的工具，解决在遇到的各种针对国内企业信息收集难题。一键收集控股公司ICP备案、APP、小程序、微信公众号等信息聚合导出。",
+    "homepage": "https://github.com/wgpsec/ENScan_GO",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/wgpsec/ENScan_GO/releases/download/0.0.18/enscan-0.0.18-windows-amd64.zip",
+            "hash": "ea40c02bfd1dd1e70859e2bf468ff969",
+            "extract_dir": "enscan-0.0.18-windows-amd64"
+        }
+    },
+    "bin": [
+        "enscan-0.0.18-windows-amd64.exe"
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/wgpsec/ENScan_GO/releases/download/$version/enscan-$version-windows-amd64.zip",
+                "extract_dir": "enscan-$version-windows-amd64"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/md5.txt"
+        }
+    }
+}
