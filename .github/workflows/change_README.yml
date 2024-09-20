@@ -66,7 +66,7 @@ jobs:
         echo "## 现有适配软件" >> README.md
         echo "| 软件                            | 描述                                                         | 官网地址                                                     |" >> README.md
         echo "| :------------------------------ | :----------------------------------------------------------- | :----------------------------------------------------------- |" >> README.md
-        for file in bucket/*.json; do
+        find bucket -name '*.json' | while read file; do
           name=$(jq -r '.name' "$file")
           description=$(jq -r '.description' "$file")
           homepage=$(jq -r '.homepage' "$file")
