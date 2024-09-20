@@ -1,0 +1,43 @@
+name: Update README on Bucket Change
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'bucket/**'
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Install jq
+      run: sudo apt-get install jq
+
+    - name: Update README
+      run: |
+        echo "# Bucket Files" > README.md
+        echo "" >> README.md
+        for file in bucket/*.json; do
+          name=$(jq -r '.name' "$file")
+          version=$(jq -r '.version' "$file")
+          other=$(jq -r '.other_property' "$file")  # 修改为你需要的属性
+          echo "## $name" >> README.md
+          echo "- Version: $version" >> README.md
+          echo "- Other: $other" >> README.md
+          echo "" >> README.md
+        done
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add README.md
+        git commit -m "Update README with bucket JSON info" || echo "No changes to commit"
+
+    - name: Push changes
+      uses: ad-m/github-push-action@v0.6.0
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: master
