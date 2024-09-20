@@ -1,0 +1,60 @@
+name: Update Wiki from Bucket
+
+on:
+  push:
+    branches:
+      - main  # 或者你的主分支名称
+    paths:
+      - 'bucket/**'
+
+jobs:
+  update-wiki:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Install jq
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y jq
+
+    - name: Clone Wiki
+      run: |
+        git clone https://github.com/tongtong-bob/303.wiki.git
+        cd 303.wiki
+
+    - name: Update Main Page
+      run: |
+        cd 303.wiki
+        echo "# Bucket Overview" > Home.md
+        echo "## Subdirectories" >> Home.md
+        for dir in ../bucket/*/; do
+          dirname=$(basename "$dir")
+          echo "- [$dirname]($dirname)" >> Home.md
+        done
+
+    - name: Update Subdirectory Pages
+      run: |
+        for dir in ../bucket/*/; do
+          dirname=$(basename "$dir")
+          echo "# $dirname" > 303.wiki/$dirname.md
+          echo "| 软件 | 描述 | 官网地址 |" >> 303.wiki/$dirname.md
+          echo "| :--- | :--- | :------- |" >> 303.wiki/$dirname.md
+          for file in $dir*.json; do
+            name=$(basename "$file" .json)
+            description=$(jq -r '.description' "$file")
+            homepage=$(jq -r '.homepage' "$file")
+            echo "| **$name** | $description | [Homepage]($homepage) |" >> 303.wiki/$dirname.md
+          done
+        done
+
+    - name: Commit and Push Changes
+      run: |
+        cd 303.wiki
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add .
+        git commit -m "Update Wiki from Bucket" || echo "No changes to commit"
+        git push
