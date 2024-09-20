@@ -65,7 +65,7 @@ jobs:
         echo "### 安装该软件仓库中的软件" >> README.md
         echo "确保你已经有 Scoop 环境后，执行以下命令订阅本软件仓库：" >> README.md
         echo "   \`\`\`powershell" >> README.md
-        echo "   scoop bucket add ar https://github.com/tongtong-bob/303" >> README.md
+        echo "   scoop bucket add 303 https://github.com/tongtong-bob/303" >> README.md
         echo "   \`\`\`" >> README.md
         echo "   执行以下命令安装本仓库中的软件：" >> README.md
         echo "   \`\`\`powershell" >> README.md
