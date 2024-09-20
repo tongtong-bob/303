@@ -1,6 +1,6 @@
 {
     "version": "2.10.4",
-    "description": "一个用 Rust 编写的快速，简单，递归的内容发现工具。A fast, simple, recursive content discovery tool written in Rust.(Scoop bucket for Cybersecurity by whoopscs)",
+    "description": "一个用 Rust 编写的快速，简单，递归的内容发现工具。A fast, simple, recursive content discovery tool written in Rust.",
     "homepage": "https://github.com/epi052/feroxbuster",
     "license": "MIT",
     "notes": [

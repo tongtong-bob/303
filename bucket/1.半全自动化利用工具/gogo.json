@@ -1,6 +1,6 @@
 {
     "version": "2.13.3",
-    "description": "面向红队的, 高度可控可拓展的自动化引擎(Scoop bucket for Cybersecurity by whoopscs)",
+    "description": "面向红队的, 高度可控可拓展的自动化引擎",
     "homepage": "https://github.com/chainreactors/gogo",
     "license": "MIT",
     "notes": "Scoop bucket for Cybersecurity by whoopscs(https://github.com/whoopscs/scoop-security).",

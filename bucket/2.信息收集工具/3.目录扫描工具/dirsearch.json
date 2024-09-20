@@ -1,6 +1,6 @@
 {
     "version": "0.4.3",
-    "description": "Web path scanner.(Scoop bucket for Cybersecurity by whoopscs)",
+    "description": "Web path scanner.",
     "homepage": "https://github.com/maurosoria/dirsearch",
     "license": "Freeware",
     "notes": [

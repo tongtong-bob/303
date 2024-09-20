@@ -1,6 +1,6 @@
 {
     "version": "2.0.8",
-    "description": "pocsuite3 is an open-sourced remote vulnerability testing framework developed by the Knownsec 404 Team.(Scoop bucket by arch3rpro)",
+    "description": "pocsuite3 is an open-sourced remote vulnerability testing framework developed by the Knownsec 404 Team.",
     "homepage": "https://github.com/knownsec/pocsuite3/",
     "license": "GNU",
     "suggest": "python3.x",

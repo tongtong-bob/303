@@ -1,6 +1,6 @@
 {
     "version": "v1.1.2",
-    "description": "Port Scanner & Banner Identify From TianXiang(Scoop bucket by arch3rpro)",
+    "description": "Port Scanner & Banner Identify From TianXiang",
     "homepage": "https://github.com/4dogs-cn/TXPortMap",
     "license": "MIT",
     "architecture": {
