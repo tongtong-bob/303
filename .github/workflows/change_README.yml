@@ -62,7 +62,7 @@ jobs:
         echo "   \`\`\`" >> README.md
         echo "" >> README.md
         echo "   其中\`-RunAsAdmin\`是使用管理员角色执行脚本，\`-ScoopDir\`指定scoop安装目录，软件默认安装在此。 \`-ScoopGlobalDir\`指定全局程序安装到自定义目录。" >> README.md
-        echo "    ### 安装该软件仓库中的软件" >> README.md
+        echo "### 安装该软件仓库中的软件" >> README.md
         echo "确保你已经有 Scoop 环境后，执行以下命令订阅本软件仓库：" >> README.md
         echo "   \`\`\`powershell" >> README.md
         echo "   scoop bucket add ar https://github.com/tongtong-bob/303" >> README.md
