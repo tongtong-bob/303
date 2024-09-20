@@ -156,7 +156,7 @@ Scoop bucket **就是一个软件仓库**,提供windows渗透测试环境工具�
 | scoop install windows-terminal -g | The new Windows Terminal, and the original Windows console host - all in the same place! | <https://github.com/microsoft/terminal> |
 | scoop install uTools -g | 新一代效率工具平台. | <https://u.tools/> |
 | scoop install verycapture -g | 支持长截图，矩形截图，延时截图，任意区域截图，gif录制，录屏，ocr翻译等功能 | <https://verycapture.com/cn/download.html> |
-| scoop install mobaxterm -g | MobaXterm 简体中文汉化版 | <https://github.com/RipplePiam/MobaXterm-Chinese-Simplified> |
+| scoop install mobaxterm -g | MobaXterm 简体中文汉化版 | <https://github.com/RipplePiam/MobaXterm-Chinese-Simplified.> |
 | scoop install Maye-lite -g | 更轻更简洁的快速启动工具，功能单一化，专注于文件的快速启动 | <https://t.arae.cc/p/25804.html> |
 | scoop install notify -g | Notify is a Go-based assistance package that enables you to stream the output of several tools (or read from a file) and publish it to a variety of supported platforms | <https://projectdiscovery.io> |
 | scoop install cudatext-cn -g | Cross-platform text and code editor | <https://sourceforge.net/projects/cudatext> |
