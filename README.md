@@ -43,11 +43,11 @@ Scoop bucket **就是一个软件仓库**,提供windows渗透测试环境工具�
 ### 安装该软件仓库中的软件
 确保你已经有 Scoop 环境后，执行以下命令订阅本软件仓库：
    ```powershell
-   scoop bucket add ar https://github.com/tongtong-bob/303
+   scoop bucket add 303 https://github.com/tongtong-bob/303
    ```
    执行以下命令安装本仓库中的软件：
    ```powershell
-   scoop install ar/<软件名> -g
+   scoop install 303/<软件名> -g
    ```
 
 ## 现有适配软件
