@@ -1,16 +1,16 @@
 {
-    "version": "5.10.7",
+    "version": "5.11.0",
     "description": "A messaging app with a focus on speed and security",
     "homepage": "https://telegram.org",
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/telegramdesktop/tdesktop/releases/download/v5.10.7/tportable-x64.5.10.7.zip",
-            "hash": "228b58bc25acae4dda61b8430f96a060720c46b472abeef2cfd6bcd9d630166c"
+            "url": "https://mirror.ghproxy.com/https://github.com/telegramdesktop/tdesktop/releases/download/v5.11.0/tportable-x64.5.11.0.zip",
+            "hash": "1bf09a1fff643c5741af21f8160b2e70caad62d0584ed2b271b49bd3c2efd57f"
         },
         "32bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/telegramdesktop/tdesktop/releases/download/v5.10.7/tportable.5.10.7.zip",
-            "hash": "8e73acf8f15d671420a2bf1b2eede75daa80f4ced48dc0108e6f0c5fbfd6c4fb"
+            "url": "https://mirror.ghproxy.com/https://github.com/telegramdesktop/tdesktop/releases/download/v5.11.0/tportable.5.11.0.zip",
+            "hash": "1bf09a1fff643c5741af21f8160b2e70caad62d0584ed2b271b49bd3c2efd57f"
         }
     },
     "extract_dir": "Telegram",
