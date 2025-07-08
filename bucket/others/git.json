@@ -1,5 +1,5 @@
 {
-    "version": "2.50.0.2",
+    "version": "2.50.1",
     "description": "Distributed version control system",
     "homepage": "https://gitforwindows.org",
     "license": "GPL-2.0-only",
@@ -12,12 +12,12 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/git-for-windows/git/releases/download/v2.50.0.windows.2/PortableGit-2.50.0.2-64-bit.7z.exe#/dl.7z",
-            "hash": "de8e309e780201d74b09e4b248209fd5544c45acbb5a4d131562739460aeeb46"
+            "url": "https://mirror.ghproxy.com/https://github.com/git-for-windows/git/releases/download/v2.50.1.windows.1/PortableGit-2.50.1-64-bit.7z.exe#/dl.7z",
+            "hash": "c45a7dfa2bde34059f6dbd85f49a95d73d5aea29305f51b79595e56e4f323a3d"
         },
         "32bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/git-for-windows/git/releases/download/v2.50.0.windows.2/PortableGit-2.50.0.2-32-bit.7z.exe#/dl.7z",
-            "hash": "1bf09a1fff643c5741af21f8160b2e70caad62d0584ed2b271b49bd3c2efd57f"
+            "url": "https://mirror.ghproxy.com/https://github.com/git-for-windows/git/releases/download/v2.50.1.windows.1/PortableGit-2.50.1-32-bit.7z.exe#/dl.7z",
+            "hash": "7692d9af16b08150e28dae6c63106a46995fb44e5f4c85182ac7eb1b840543c5"
         }
     },
     "post_install": [
