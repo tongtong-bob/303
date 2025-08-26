@@ -1,24 +1,24 @@
 {
-    "version": "1.23.12102.0",
+    "version": "1.24.2372.0",
     "description": "The new Windows Terminal, and the original Windows console host - all in the same place! (Preview version)",
     "homepage": "https://github.com/microsoft/terminal",
     "license": "MIT",
     "notes": "Add Windows Terminal Preview as a context menu option by running `reg import \"$dir\\install-context.reg\"`",
     "architecture": {
         "64bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/microsoft/terminal/releases/download/v1.23.12102.0/Microsoft.WindowsTerminalPreview_1.23.12102.0_x64.zip",
+            "url": "https://mirror.ghproxy.com/https://github.com/microsoft/terminal/releases/download/v1.24.2372.0/Microsoft.WindowsTerminalPreview_1.24.2372.0_x64.zip",
             "hash": "1bf09a1fff643c5741af21f8160b2e70caad62d0584ed2b271b49bd3c2efd57f"
         },
         "32bit": {
-            "url": "https://mirror.ghproxy.com/https://github.com/microsoft/terminal/releases/download/v1.23.12102.0/Microsoft.WindowsTerminalPreview_1.23.12102.0_x86.zip",
+            "url": "https://mirror.ghproxy.com/https://github.com/microsoft/terminal/releases/download/v1.24.2372.0/Microsoft.WindowsTerminalPreview_1.24.2372.0_x86.zip",
             "hash": "1bf09a1fff643c5741af21f8160b2e70caad62d0584ed2b271b49bd3c2efd57f"
         },
         "arm64": {
-            "url": "https://mirror.ghproxy.com/https://github.com/microsoft/terminal/releases/download/v1.23.12102.0/Microsoft.WindowsTerminalPreview_1.23.12102.0_arm64.zip",
+            "url": "https://mirror.ghproxy.com/https://github.com/microsoft/terminal/releases/download/v1.24.2372.0/Microsoft.WindowsTerminalPreview_1.24.2372.0_arm64.zip",
             "hash": "1bf09a1fff643c5741af21f8160b2e70caad62d0584ed2b271b49bd3c2efd57f"
         }
     },
-    "extract_dir": "terminal-1.23.12102.0",
+    "extract_dir": "terminal-1.24.2372.0",
     "pre_install": [
         "# Remove this hint in 2023-12-01",
         "$settings_path = \"$env:LOCALAPPDATA\\Packages\\Microsoft.WindowsTerminalPreview_8wekyb3d8bbwe\\LocalState\"",
