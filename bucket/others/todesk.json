@@ -1,10 +1,10 @@
 {
     "homepage": "https://www.todesk.com/",
     "description": "ToDesk Windows客户端. ",
-    "version": "4.8.1.5",
+    "version": "4.8.2.2",
     "license": "Proprietary",
     "url": "https://dl.todesk.com/windows/ToDesk_Setup.exe#/dl.7z",
-    "hash": "0615afee8b918dea05ba3b1bcd2c2cfafadacf4ea1a725d219edd689074fe3fa",
+    "hash": "85c2ff459278de2420e494093e9c3d6148251d1d8bfa7054b2493b16fea23345",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\config.ini\")) {",
         "    New-Item -Force -Path \"$persist_dir\\config.ini\" -ItemType File -Value \"[ConfigInfo]`nautoStart=0\" | Out-Null",
